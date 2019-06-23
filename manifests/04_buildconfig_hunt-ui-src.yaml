@@ -3,7 +3,7 @@ kind: BuildConfig
 metadata:
   labels:
     app: hunt-ui
-  name: pod-hunt-src
+  name: hunt-ui-src
   namespace: pod-hunt
 spec:
   failedBuildsHistoryLimit: 5
@@ -28,8 +28,4 @@ spec:
     type: Source
   successfulBuildsHistoryLimit: 5
   triggers:
-  - github:
-      secret: 7b6c52a8146202e3
-    type: GitHub
-  - type: ImageChange
   - type: ConfigChange

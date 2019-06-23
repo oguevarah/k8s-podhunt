@@ -3,7 +3,7 @@ kind: BuildConfig
 metadata:
   labels:
     app: hunt-ui
-  name: pod-hunt-nginx
+  name: hunt-ui-bin
   namespace: pod-hunt
 spec:
   failedBuildsHistoryLimit: 5
@@ -33,11 +33,4 @@ spec:
     type: Source
   successfulBuildsHistoryLimit: 5
   triggers:
-  - type: ImageChange
-  - type: ImageChange
-    imageChange:
-      from:
-        kind: "ImageStreamTag"
-        name: "hunt-ui:src"
-    type: ImageChange
   - type: ConfigChange

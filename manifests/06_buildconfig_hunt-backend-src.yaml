@@ -28,8 +28,4 @@ spec:
     type: Source
   successfulBuildsHistoryLimit: 5
   triggers:
-  - type: ImageChange
   - type: ConfigChange
-  - github:
-      secret: dbb3f5b90a1a1283
-    type: GitHub

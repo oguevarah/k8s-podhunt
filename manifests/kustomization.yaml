@@ -17,3 +17,5 @@ resources:
   - 13-route-ui.yaml
   - 14-clusterrolebinding.yaml
   - 15-serviceaccount.yaml
+  - 16-tekton-openshift-client-task.yaml
+  - 17-tekton-pipeline.yaml
